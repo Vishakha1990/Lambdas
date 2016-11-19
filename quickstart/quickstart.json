@@ -1,0 +1,5 @@
+{
+  "registry": "local", 
+  "reg_dir": "handlers",
+  "worker_port": "8080"
+}

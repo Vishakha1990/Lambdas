@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# test for non-empty gofmt (this outputs diffs)
+if [[ $( cd worker && gofmt -d . ) ]]; then
+	cat <<\EOF
+Error:  format check failed
+        Please format worker/ with 'gofmt -w -l .' and commit again
+EOF
+	exit 1
+fi
+
+
+$( cd worker && go vet ) || {
+	cat <<\EOF
+Error:  vet check failed
+        Please vet your code in worker/ with 'go vet' and commit again
+        All code must pass vet to commit
+EOF
+	exit 1
+}
+
