@@ -1,3 +1,6 @@
+# Lambdas - CS 739 project
+This is an extraction from open-lambda-master.zip, which is some version of https://github.com/open-lambda/open-lambda
+
 # OpenLambda
 
 OpenLambda is a project dedicated to bringing the Lambda ("serverless") computing framework to the open source world. The purpose of this is primarily to provide a platform for the exploration of research questions that serverless computing prompts (see the publication section).
