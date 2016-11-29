@@ -1,0 +1,11 @@
+Result\tTimeType\tTime
+"Hello dummy"	real	0m20.680s	
+"Hello dummy"	real	0m20.879s	
+"Hello dummy"	real	0m20.912s	
+"Hello dummy"	real	0m20.967s	
+"Hello dummy"	real	0m21.371s	
+"Hello dummy"	real	0m21.405s	
+"Hello dummy"	real	0m21.404s	
+"Hello dummy"	real	0m21.408s	
+"Hello dummy"	real	0m21.417s	
+"Hello dummy"	real	0m21.531s	

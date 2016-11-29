@@ -21,7 +21,7 @@ if [ -n "$2" ]
 then
 	url=$2
 else
-	url=https://8e4m1dc1dd.execute-api.us-west-2.amazonaws.com/prod/hello
+	url=https://mud0dqdiye.execute-api.us-west-2.amazonaws.com/prod/api/helloapi
 fi
 
 time curl -H "Content-Type: application/json" -X POST -s -w "\n" ${url} -d '{"msg": "'"${msg}"'"}'
