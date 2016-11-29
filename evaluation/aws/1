@@ -21,7 +21,7 @@ if [ -n "$2" ]
 then
 	url=$2
 else
-	url=https://nehatesting.azurewebsites.net/api/HttpTriggerCSharp1?code=d1vcyncMHpLajNlaxOYiPJZVsTLTp3ruQ/gXiRgdilEB6SlgP4hbqQ==
+	url=https://8e4m1dc1dd.execute-api.us-west-2.amazonaws.com/prod/hello
 fi
 
-time curl -H "Content-Type: application/json" -X POST -s -w "\n" ${url} -d '{"name": "'"${msg}"'"}'
+time curl -H "Content-Type: application/json" -X GET -s -w "\n" ${url} -d '{"name": "'"${msg}"'"}'

@@ -10,7 +10,7 @@ def msg(conn, event):
     ts = time.time()
    # r.db(CHAT).table(MSGS).insert({MSG: event['msg'],
    #                                   TS:  ts}).run(conn)
-    return 'Hello %s complete' % event['msg']
+    return 'Hello %s' % event['msg']
 
 def updates(conn, event):
     ts = event.get('ts', 0)
