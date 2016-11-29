@@ -24,4 +24,4 @@ else
 	url=https://8e4m1dc1dd.execute-api.us-west-2.amazonaws.com/prod/hello
 fi
 
-time curl -H "Content-Type: application/json" -X GET -s -w "\n" ${url} -d '{"msg": "'"${msg}"'"}'
+time curl -H "Content-Type: application/json" -X POST -s -w "\n" ${url} -d '{"msg": "'"${msg}"'"}'
