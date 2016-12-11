@@ -2,11 +2,11 @@ import requests
 import json
 
 
-def sampleSendHttpRequests(url):
+def sampleSendHttpRequests():
     r = requests.get('http://stackoverflow.com/questions/11322430/python-how-to-send-post-request')
     payload = {'key1': 'value1', 'key2': 'value2'}
     r = requests.post("http://httpbin.org/post", data=payload)
-    r = requests.post(url)
+    # r = requests.post(url)
 
 
 def printAndSendReq(url):
