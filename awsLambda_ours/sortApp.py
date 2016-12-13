@@ -48,37 +48,52 @@ def postToSortInput(num_list):
     # print "num_list", num_list
     # print "params", params
     r = requests.post(sortInputUrl, data=params)
-    print r.status_code
+    if r.status_code != 200:
+        print "PROBLEM!!!! return code not 200, is ",r.status_code
+        print "returned:", json.loads(r.content)[:10]
     return json.loads(r.content)
 
-def sortInputsMain(num):
-    my_randoms = random.sample(xrange(num * 100), num)
+def sortInputsMainLocal(num):
+    my_randoms = random.sample(xrange(num * 5), num)
 
     startTime = time.time()
     my_sorted = sorted(my_randoms)
     endTime = time.time()
     print "Num:\t{}\tTime:\t{}".format(num, endTime - startTime)
 
-    # numDivs = 5
-    # my_array = [num / numDivs] * numDivs  # [2500, 2500, 2500, 2500]
-    #
-    # pool = ThreadPool(numDivs)
-    # startTime = time.time()
-    # sorted_lists = pool.map(postToGenerateAndSort, my_array)
+def sortInputsMainLambda(num, numDivs):
+    # my_randoms = random.sample(xrange(num * 100), num)
+    pool = ThreadPool(numDivs)
+    numPerDiv = num / numDivs
+    print "Num Per Div: ", numPerDiv
 
-    # sorted_final = list(heapq.merge(*sorted_lists))
+    function_param_array = []
+    for i in xrange(0, numDivs):
+        # function_param_array.append(my_randoms[(i*numPerDiv):(i+1)*numPerDiv])
+        function_param_array.append(random.sample(xrange(numPerDiv * 5), numPerDiv))
 
+    startTime = time.time()
+    sorted_lists = pool.map(postToSortInput, function_param_array)
+    recvdTime = time.time()
+    sorted_final = list(heapq.merge(*sorted_lists))
+    mergeTime = time.time()
+    print "Num:\t{}\tRecvdTime:\t{}\tTotalTime:\t{}".format(num, recvdTime - startTime, mergeTime - startTime)
+    # print sorted_final
 
 
 
 def main(argv):
-    sortInputsMain(100)
-    sortInputsMain(1000)
-    sortInputsMain(10000)
-    sortInputsMain(100000)
-    sortInputsMain(1000000)
-    # sortInputsMain(10000000)
-    # sortInputsMain(100000000)
+    lol = sys.argv[1]
+    num = int(sys.argv[2])
+    numDivs = -1
+    if len(sys.argv) > 3:
+        numDivs = int(sys.argv[3])
+
+    if lol == 'local':
+        sortInputsMainLocal(num)
+    else:
+        sortInputsMainLambda(num, numDivs)
+
 
 
 

@@ -1,0 +1,3 @@
+# curl -H "Content-Type: application/json" -X POST https://jkf02xx1kl.execute-api.us-east-2.amazonaws.com/prod/api/sort/generate -d '{"num":6}'
+# curl -H "Content-Type: application/json" -X POST https://jkf02xx1kl.execute-api.us-east-2.amazonaws.com/prod/api/sort/input -d '{"numbers":[6, 5, 8, 2]}'
+
