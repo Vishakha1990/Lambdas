@@ -33,7 +33,7 @@ def postToLambda(peoplelist):
 
 
 def postToNearbyPeople(peoplelist):
-	numDivs = 4
+	numDivs = 10
 	pool = ThreadPool(numDivs)
 	length = (len(peoplelist))/numDivs
 	startTime = time.time()
