@@ -32,8 +32,8 @@ def postToLambda(peoplelist):
 	return json.loads(r.content)
 
 
-def postToNearbyPeople(peoplelist):
-	numDivs = 10
+def postToNearbyPeople(peoplelist, numDivs):
+	#numDivs = 10
 	pool = ThreadPool(numDivs)
 	length = (len(peoplelist))/numDivs
 	startTime = time.time()
@@ -46,12 +46,23 @@ def postToNearbyPeople(peoplelist):
 	#newList.append(peoplelist[3*length:4*length-1])
 	#newList = [peoplelist[0:length-1], peoplelist[length, 2*length-1], peoplelist[2*length, 3*length-1], peoplelist[3*length, 4*length-1]]
 	sorted_lists = pool.map(postToLambda, newList)
-	print(sorted_lists)
+	#print(sorted_lists)
 	endTime = time.time()
-	
+	re_sorted_lists=sorted(sorted_lists,key=itemgetter('startTime'))
+	printRetVals(re_sorted_lists, numDivs)
+	#print("\n\n", sorted_lists)
 	
 
-def handler():
+def printRetVals(retVals,numDivs):
+	print("numLambdas\tstartTime\tendTime\ttotalTime\tredisPercent\tprocessingPercent")
+	for retVal in retVals:
+		redisTime=float(retVal['redisTime'])
+		totalTime=float(retVal['totalTime'])
+		processingTime=float(retVal['processingTime'])
+		print(numDivs,"\t",retVal['startTime'],"\t",retVal['endTime'],"\t",retVal['totalTime'],"\t",(redisTime/totalTime),"\t",(processingTime/totalTime))
+
+
+def handler(argv):
 	"""
 	This function puts into memcache and get from it.
 	Memcache is hosted using elasticache
@@ -59,16 +70,22 @@ def handler():
 	#r = redis.Redis(
 	#host='datanode-001.zumykb.0001.use2.cache.amazonaws.com',
 	#port=6379)
+	numDivs=10
+	if(len(argv)<2):
+		print("Using default numDivs 10")
+	else:
+		numDivs=int(argv[1])
 	peoplelist = r.keys('userdata*')
-	print(len(peoplelist))
+	print("Input size\t",len(peoplelist), "\tPerLambda\t", len(peoplelist)/numDivs)
 	dist = []
-	postToNearbyPeople(peoplelist)	
-	return "Nearby Friends Completed "
+	postToNearbyPeople(peoplelist,numDivs)
+	print()
+	return ""
 
 
 
 def main(argv):
-    handler()
+    handler(argv)
 
 
 if __name__ == "__main__":
