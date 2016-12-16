@@ -1,0 +1,138 @@
+Result\tTimeType\tTime
+curl: error while loading shared libraries: libresolv.so.2: failed to map segment from shared object: Cannot allocate memory	real	0m0.286s	sys	0m0.002s	user	0m0.000s	
+curl: error while loading shared libraries: libresolv.so.2: failed to map segment from shared object: Cannot allocate memory	real	0m0.256s	sys	0m0.001s	user	0m0.000s	
+curl: error while loading shared libraries: libk5crypto.so.3: failed to map segment from shared object: Cannot allocate memory	real	0m0.316s	sys	0m0.001s	user	0m0.000s	
+curl: error while loading shared libraries: libkrb5.so.26: cannot map zero-fill pages: Cannot allocate memory	real	0m0.332s	sys	0m0.002s	user	0m0.000s	
+	real	0m0.726s	sys	0m0.000s	user	0m0.006s	
+real	0m0.365s	./runAndTimeCurl.sh: line 32: 25001 Segmentation fault      curl -H "Content-Type: application/json" -X POST -s -w "\n" ${url} -d '{"userid": "'"${usr}"'","latitude": "'"${mylat}"'","longitude": "'"${mylong}"'"}'	sys	0m0.001s	user	0m0.000s	
+real	0m0.347s	./runAndTimeCurl.sh: line 32: /usr/bin/curl: Cannot allocate memory	sys	0m0.001s	user	0m0.000s	
+
+
+
+
+./runAndTimeCurl.sh: fork: Cannot allocate memory	
+
+./runAndTimeCurl.sh: fork: Cannot allocate memory	
+./runAndTimeCurl.sh: fork: Cannot allocate memory	
+./loop_nearbyfriends.sh: line 25: ./runAndTimeCurl.sh: Cannot allocate memory	
+
+
+{"message": "Internal server error"}	real	0m1.716s	sys	0m0.000s	user	0m0.007s	
+{"message": "Internal server error"}	real	0m1.778s	sys	0m0.000s	user	0m0.007s	
+{"message": "Internal server error"}	real	0m1.719s	sys	0m0.005s	user	0m0.002s	
+{"message": "Internal server error"}	real	0m1.728s	sys	0m0.004s	user	0m0.004s	
+{"message": "Internal server error"}	real	0m1.761s	sys	0m0.006s	user	0m0.002s	
+{"message": "Internal server error"}	real	0m1.718s	sys	0m0.004s	user	0m0.004s	
+{"message": "Internal server error"}	real	0m1.857s	sys	0m0.000s	user	0m0.008s	
+{"message": "Internal server error"}	real	0m1.859s	sys	0m0.008s	user	0m0.000s	
+{"message": "Internal server error"}	real	0m1.805s	sys	0m0.000s	user	0m0.007s	
+{"message": "Internal server error"}	real	0m1.815s	sys	0m0.004s	user	0m0.004s	
+{"message": "Internal server error"}	real	0m1.480s	sys	0m0.004s	user	0m0.004s	
+{"message": "Internal server error"}	real	0m1.820s	sys	0m0.003s	user	0m0.005s	
+{"message": "Internal server error"}	real	0m1.561s	sys	0m0.000s	user	0m0.007s	
+{"message": "Internal server error"}	real	0m1.548s	sys	0m0.000s	user	0m0.007s	
+{"message": "Internal server error"}	real	0m1.800s	sys	0m0.004s	user	0m0.004s	
+{"message": "Internal server error"}	real	0m1.709s	sys	0m0.004s	user	0m0.003s	
+{"message": "Internal server error"}	real	0m1.613s	sys	0m0.004s	user	0m0.004s	
+{"message": "Internal server error"}	real	0m1.834s	sys	0m0.004s	user	0m0.004s	
+{"message": "Internal server error"}	real	0m1.884s	sys	0m0.000s	user	0m0.007s	
+real	0m12.698s	sys	0m0.000s	{"totalTime": 11.085466146469116, "processingtime": 0.16871333122253418, "endTime": 1481912169.035294, "startTime": 1481912157.949828, "redisTime": 10.912277698516846}	user	0m0.007s	
+real	0m13.089s	sys	0m0.000s	{"totalTime": 11.589526176452637, "processingtime": 0.15912485122680664, "endTime": 1481912169.457241, "startTime": 1481912157.867715, "redisTime": 11.426280975341797}	user	0m0.007s	
+real	0m13.130s	sys	0m0.000s	{"totalTime": 11.540576934814453, "processingtime": 0.1551504135131836, "endTime": 1481912169.523725, "startTime": 1481912157.983148, "redisTime": 11.362113237380981}	user	0m0.007s	
+real	0m13.011s	sys	0m0.008s	{"totalTime": 11.51691484451294, "processingtime": 0.15222668647766113, "endTime": 1481912169.606449, "startTime": 1481912158.089534, "redisTime": 11.359235525131226}	user	0m0.000s	
+real	0m13.332s	sys	0m0.000s	{"totalTime": 11.802425861358643, "processingtime": 0.14952945709228516, "endTime": 1481912169.732519, "startTime": 1481912157.930093, "redisTime": 11.64856481552124}	user	0m0.007s	
+real	0m13.710s	sys	0m0.005s	{"totalTime": 12.240176916122437, "processingtime": 0.16316580772399902, "endTime": 1481912170.110343, "startTime": 1481912157.870166, "redisTime": 12.072711944580078}	user	0m0.002s	
+real	0m14.158s	sys	0m0.008s	{"totalTime": 12.577992916107178, "processingtime": 0.16086101531982422, "endTime": 1481912170.487972, "startTime": 1481912157.909979, "redisTime": 12.395532608032227}	user	0m0.000s	
+real	0m14.117s	sys	0m0.005s	{"totalTime": 12.68114709854126, "processingtime": 0.18485331535339355, "endTime": 1481912170.816544, "startTime": 1481912158.135397, "redisTime": 12.48801565170288}	user	0m0.003s	
+real	0m14.266s	sys	0m0.000s	{"totalTime": 12.72961711883545, "processingtime": 0.19252347946166992, "endTime": 1481912170.899166, "startTime": 1481912158.169549, "redisTime": 12.526013135910034}	user	0m0.008s	
+real	0m14.670s	sys	0m0.005s	{"totalTime": 13.130839824676514, "processingtime": 0.16082286834716797, "endTime": 1481912171.107082, "startTime": 1481912157.976242, "redisTime": 12.96334981918335}	user	0m0.003s	
+real	0m14.756s	sys	0m0.004s	{"totalTime": 13.393388986587524, "processingtime": 0.1546013355255127, "endTime": 1481912171.37545, "startTime": 1481912157.982061, "redisTime": 13.23286509513855}	user	0m0.004s	
+real	0m14.989s	sys	0m0.008s	{"totalTime": 13.47120714187622, "processingtime": 0.16811752319335938, "endTime": 1481912171.44246, "startTime": 1481912157.971253, "redisTime": 13.287189483642578}	user	0m0.000s	
+real	0m14.826s	sys	0m0.007s	{"totalTime": 13.530816078186035, "processingtime": 0.16544675827026367, "endTime": 1481912171.504656, "startTime": 1481912157.97384, "redisTime": 13.340965270996094}	user	0m0.000s	
+real	0m15.257s	sys	0m0.000s	{"totalTime": 13.65299916267395, "processingtime": 0.162184476852417, "endTime": 1481912171.630325, "startTime": 1481912157.977326, "redisTime": 13.484543323516846}	user	0m0.008s	
+real	0m15.143s	sys	0m0.000s	{"totalTime": 13.693753957748413, "processingtime": 0.19980931282043457, "endTime": 1481912171.659196, "startTime": 1481912157.965442, "redisTime": 13.48842716217041}	user	0m0.007s	
+real	0m15.312s	sys	0m0.007s	{"totalTime": 13.836162090301514, "processingtime": 0.16152119636535645, "endTime": 1481912171.784388, "startTime": 1481912157.948226, "redisTime": 13.669143199920654}	user	0m0.000s	
+real	0m15.222s	sys	0m0.008s	{"totalTime": 13.744256019592285, "processingtime": 0.1600048542022705, "endTime": 1481912171.828746, "startTime": 1481912158.08449, "redisTime": 13.559189796447754}	user	0m0.000s	
+real	0m15.661s	sys	0m0.004s	{"totalTime": 14.147438049316406, "processingtime": 0.18822717666625977, "endTime": 1481912172.007849, "startTime": 1481912157.860411, "redisTime": 13.954235553741455}	user	0m0.004s	
+real	0m15.704s	sys	0m0.008s	{"totalTime": 14.079001903533936, "processingtime": 0.17367959022521973, "endTime": 1481912172.0339, "startTime": 1481912157.954898, "redisTime": 13.899114847183228}	user	0m0.000s	
+real	0m15.656s	sys	0m0.007s	{"totalTime": 14.121373891830444, "processingtime": 0.1623220443725586, "endTime": 1481912172.087803, "startTime": 1481912157.966429, "redisTime": 13.953317642211914}	user	0m0.000s	
+real	0m15.756s	sys	0m0.007s	{"totalTime": 14.226723909378052, "processingtime": 0.16480731964111328, "endTime": 1481912172.099551, "startTime": 1481912157.872827, "redisTime": 14.040558338165283}	user	0m0.000s	
+real	0m15.538s	sys	0m0.006s	{"totalTime": 13.943073034286499, "processingtime": 0.1551671028137207, "endTime": 1481912172.138707, "startTime": 1481912158.195634, "redisTime": 13.774956941604614}	user	0m0.002s	
+real	0m15.779s	sys	0m0.008s	{"totalTime": 14.309513092041016, "processingtime": 0.16620421409606934, "endTime": 1481912172.178785, "startTime": 1481912157.869272, "redisTime": 14.138467788696289}	user	0m0.000s	
+real	0m15.769s	sys	0m0.000s	{"totalTime": 14.252840042114258, "processingtime": 0.14707469940185547, "endTime": 1481912172.252753, "startTime": 1481912157.999913, "redisTime": 14.098773956298828}	user	0m0.007s	
+real	0m15.972s	sys	0m0.008s	{"totalTime": 14.438534021377563, "processingtime": 0.1641836166381836, "endTime": 1481912172.310236, "startTime": 1481912157.871702, "redisTime": 14.270013809204102}	user	0m0.000s	
+real	0m15.562s	sys	0m0.000s	{"totalTime": 14.049500942230225, "processingtime": 0.16092514991760254, "endTime": 1481912172.331593, "startTime": 1481912158.282092, "redisTime": 13.879462003707886}	user	0m0.007s	
+real	0m15.981s	sys	0m0.004s	{"totalTime": 14.35936188697815, "processingtime": 0.15806031227111816, "endTime": 1481912172.388151, "startTime": 1481912158.028789, "redisTime": 14.194443702697754}	user	0m0.004s	
+real	0m15.930s	sys	0m0.000s	{"totalTime": 14.449945211410522, "processingtime": 0.16655278205871582, "endTime": 1481912172.402609, "startTime": 1481912157.952664, "redisTime": 14.278622150421143}	user	0m0.007s	
+real	0m15.859s	sys	0m0.008s	{"totalTime": 14.485399961471558, "processingtime": 0.15172648429870605, "endTime": 1481912172.480869, "startTime": 1481912157.995469, "redisTime": 14.3242506980896}	user	0m0.000s	
+real	0m16.121s	sys	0m0.004s	{"totalTime": 14.567792892456055, "processingtime": 0.15836310386657715, "endTime": 1481912172.503295, "startTime": 1481912157.935502, "redisTime": 14.404577016830444}	user	0m0.004s	
+real	0m16.122s	sys	0m0.007s	{"totalTime": 14.589648008346558, "processingtime": 0.19208359718322754, "endTime": 1481912172.51486, "startTime": 1481912157.925212, "redisTime": 14.393372535705566}	user	0m0.000s	
+real	0m15.292s	sys	0m0.008s	{"totalTime": 13.736032009124756, "processingtime": 0.16307306289672852, "endTime": 1481912172.522651, "startTime": 1481912158.786619, "redisTime": 13.565365314483643}	user	0m0.000s	
+real	0m16.172s	sys	0m0.003s	{"totalTime": 14.542810916900635, "processingtime": 0.1625986099243164, "endTime": 1481912172.550436, "startTime": 1481912158.007625, "redisTime": 14.372995615005493}	user	0m0.005s	
+real	0m16.035s	sys	0m0.008s	{"totalTime": 14.726310968399048, "processingtime": 0.16679120063781738, "endTime": 1481912172.57976, "startTime": 1481912157.853449, "redisTime": 14.552464008331299}	user	0m0.000s	
+real	0m15.827s	sys	0m0.000s	{"totalTime": 14.463320970535278, "processingtime": 0.1818392276763916, "endTime": 1481912172.64383, "startTime": 1481912158.180509, "redisTime": 14.274169683456421}	user	0m0.008s	
+real	0m16.215s	sys	0m0.006s	{"totalTime": 14.704524993896484, "processingtime": 0.1481020450592041, "endTime": 1481912172.730107, "startTime": 1481912158.025582, "redisTime": 14.549108505249023}	user	0m0.002s	
+real	0m15.949s	sys	0m0.000s	{"totalTime": 14.491589069366455, "processingtime": 0.15854620933532715, "endTime": 1481912172.763634, "startTime": 1481912158.272045, "redisTime": 14.311691999435425}	user	0m0.008s	
+real	0m16.307s	sys	0m0.004s	{"totalTime": 14.847360849380493, "processingtime": 0.146881103515625, "endTime": 1481912172.783032, "startTime": 1481912157.935671, "redisTime": 14.696364164352417}	user	0m0.004s	
+real	0m15.937s	sys	0m0.008s	{"totalTime": 14.423358917236328, "processingtime": 0.16469907760620117, "endTime": 1481912172.784685, "startTime": 1481912158.361326, "redisTime": 14.234883069992065}	user	0m0.000s	
+real	0m16.624s	sys	0m0.000s	{"totalTime": 14.989701986312866, "processingtime": 0.15672659873962402, "endTime": 1481912172.974021, "startTime": 1481912157.984319, "redisTime": 14.824843645095825}	user	0m0.007s	
+real	0m16.631s	sys	0m0.007s	{"totalTime": 15.152503967285156, "processingtime": 0.158494234085083, "endTime": 1481912173.054736, "startTime": 1481912157.902232, "redisTime": 14.98934817314148}	user	0m0.000s	
+real	0m16.365s	sys	0m0.000s	{"totalTime": 14.901120901107788, "processingtime": 0.16658496856689453, "endTime": 1481912173.05352, "startTime": 1481912158.152399, "redisTime": 14.724393129348755}	user	0m0.007s	
+real	0m16.586s	sys	0m0.008s	{"totalTime": 15.125672101974487, "processingtime": 0.1568922996520996, "endTime": 1481912173.068706, "startTime": 1481912157.943034, "redisTime": 14.964072227478027}	user	0m0.000s	
+real	0m16.617s	sys	0m0.007s	{"totalTime": 15.153029918670654, "processingtime": 0.1739051342010498, "endTime": 1481912173.083243, "startTime": 1481912157.930213, "redisTime": 14.974977016448975}	user	0m0.000s	
+real	0m16.205s	sys	0m0.000s	{"totalTime": 14.722714900970459, "processingtime": 0.1551041603088379, "endTime": 1481912173.108759, "startTime": 1481912158.386044, "redisTime": 14.56143569946289}	user	0m0.008s	
+real	0m16.514s	sys	0m0.000s	{"totalTime": 15.132482051849365, "processingtime": 0.1739652156829834, "endTime": 1481912173.182501, "startTime": 1481912158.050019, "redisTime": 14.953115463256836}	user	0m0.008s	
+real	0m16.528s	sys	0m0.008s	{"totalTime": 15.008980989456177, "processingtime": 0.16106319427490234, "endTime": 1481912173.217639, "startTime": 1481912158.208658, "redisTime": 14.839004755020142}	user	0m0.000s	
+real	0m16.870s	sys	0m0.003s	{"totalTime": 15.24744200706482, "processingtime": 0.16271305084228516, "endTime": 1481912173.202153, "startTime": 1481912157.954711, "redisTime": 15.076078414916992}	user	0m0.004s	
+real	0m16.734s	sys	0m0.002s	{"totalTime": 15.254263877868652, "processingtime": 0.16332221031188965, "endTime": 1481912173.230424, "startTime": 1481912157.97616, "redisTime": 15.0863037109375}	user	0m0.006s	
+real	0m16.051s	sys	0m0.000s	{"totalTime": 14.457604885101318, "processingtime": 0.14861297607421875, "endTime": 1481912173.267165, "startTime": 1481912158.80956, "redisTime": 14.29793095588684}	user	0m0.008s	
+real	0m16.556s	sys	0m0.002s	{"totalTime": 15.092785120010376, "processingtime": 0.16171622276306152, "endTime": 1481912173.28835, "startTime": 1481912158.195565, "redisTime": 14.923460721969604}	user	0m0.006s	
+real	0m16.455s	sys	0m0.000s	{"totalTime": 14.748812913894653, "processingtime": 0.1568591594696045, "endTime": 1481912173.293674, "startTime": 1481912158.544861, "redisTime": 14.576859474182129}	user	0m0.008s	
+real	0m16.593s	sys	0m0.004s	{"totalTime": 15.066482067108154, "processingtime": 0.15743136405944824, "endTime": 1481912173.306283, "startTime": 1481912158.239801, "redisTime": 14.894391775131226}	user	0m0.004s	
+real	0m16.463s	sys	0m0.006s	{"totalTime": 14.975994110107422, "processingtime": 0.1818099021911621, "endTime": 1481912173.362265, "startTime": 1481912158.386271, "redisTime": 14.78724980354309}	user	0m0.003s	
+real	0m16.245s	sys	0m0.004s	{"totalTime": 14.514486074447632, "processingtime": 0.14650273323059082, "endTime": 1481912173.360472, "startTime": 1481912158.845986, "redisTime": 14.355095148086548}	user	0m0.004s	
+real	0m16.667s	sys	0m0.000s	{"totalTime": 15.235778093338013, "processingtime": 0.1608741283416748, "endTime": 1481912173.399872, "startTime": 1481912158.164094, "redisTime": 15.066375732421875}	user	0m0.007s	
+real	0m17.001s	sys	0m0.007s	{"totalTime": 15.414993047714233, "processingtime": 0.17709875106811523, "endTime": 1481912173.39439, "startTime": 1481912157.979397, "redisTime": 15.231482744216919}	user	0m0.000s	
+real	0m16.741s	sys	0m0.000s	{"totalTime": 15.183578968048096, "processingtime": 0.16785883903503418, "endTime": 1481912173.421064, "startTime": 1481912158.237485, "redisTime": 15.00425410270691}	user	0m0.008s	
+real	0m16.620s	sys	0m0.003s	{"totalTime": 15.108720064163208, "processingtime": 0.15427422523498535, "endTime": 1481912173.44818, "startTime": 1481912158.33946, "redisTime": 14.945881843566895}	user	0m0.005s	
+real	0m17.084s	sys	0m0.000s	{"totalTime": 15.630910873413086, "processingtime": 0.16006183624267578, "endTime": 1481912173.471875, "startTime": 1481912157.840964, "redisTime": 15.46674919128418}	user	0m0.007s	
+real	0m17.053s	sys	0m0.008s	{"totalTime": 15.556096076965332, "processingtime": 0.16021251678466797, "endTime": 1481912173.479757, "startTime": 1481912157.923661, "redisTime": 15.391303777694702}	user	0m0.000s	
+real	0m16.810s	sys	0m0.003s	{"totalTime": 15.311355113983154, "processingtime": 0.1744229793548584, "endTime": 1481912173.513504, "startTime": 1481912158.202149, "redisTime": 15.121797800064087}	user	0m0.005s	
+real	0m16.762s	sys	0m0.000s	{"totalTime": 15.232555866241455, "processingtime": 0.18388152122497559, "endTime": 1481912173.536012, "startTime": 1481912158.303456, "redisTime": 15.038837671279907}	user	0m0.008s	
+real	0m16.780s	sys	0m0.008s	{"totalTime": 15.225128173828125, "processingtime": 0.16057705879211426, "endTime": 1481912173.570311, "startTime": 1481912158.345183, "redisTime": 15.055142164230347}	user	0m0.000s	
+real	0m16.771s	sys	0m0.003s	{"totalTime": 15.115292072296143, "processingtime": 0.15508151054382324, "endTime": 1481912173.55196, "startTime": 1481912158.436668, "redisTime": 14.952172756195068}	user	0m0.005s	
+real	0m16.750s	sys	0m0.008s	{"totalTime": 15.309144973754883, "processingtime": 0.17036771774291992, "endTime": 1481912173.580501, "startTime": 1481912158.271356, "redisTime": 15.128705024719238}	user	0m0.000s	
+real	0m16.836s	sys	0m0.003s	{"totalTime": 15.308258056640625, "processingtime": 0.16619229316711426, "endTime": 1481912173.594542, "startTime": 1481912158.286284, "redisTime": 15.13304352760315}	user	0m0.006s	
+real	0m16.772s	sys	0m0.000s	{"totalTime": 15.179088115692139, "processingtime": 0.19324803352355957, "endTime": 1481912173.603111, "startTime": 1481912158.424023, "redisTime": 14.97614574432373}	user	0m0.008s	
+real	0m16.643s	sys	0m0.009s	{"totalTime": 14.939106941223145, "processingtime": 0.16672372817993164, "endTime": 1481912173.609442, "startTime": 1481912158.670335, "redisTime": 14.760791778564453}	user	0m0.000s	
+real	0m16.934s	sys	0m0.000s	{"totalTime": 15.353596925735474, "processingtime": 0.163346529006958, "endTime": 1481912173.643324, "startTime": 1481912158.289727, "redisTime": 15.181419610977173}	user	0m0.008s	
+real	0m16.686s	sys	0m0.003s	{"totalTime": 15.073323011398315, "processingtime": 0.15535593032836914, "endTime": 1481912173.635098, "startTime": 1481912158.561775, "redisTime": 14.910461187362671}	user	0m0.006s	
+real	0m16.690s	sys	0m0.001s	{"totalTime": 14.87132716178894, "processingtime": 0.1643989086151123, "endTime": 1481912173.67178, "startTime": 1481912158.800453, "redisTime": 14.698399305343628}	user	0m0.009s	
+real	0m16.980s	sys	0m0.000s	{"totalTime": 15.43287706375122, "processingtime": 0.19756031036376953, "endTime": 1481912173.70982, "startTime": 1481912158.276943, "redisTime": 15.229694128036499}	user	0m0.009s	
+real	0m17.389s	sys	0m0.000s	{"totalTime": 15.753019094467163, "processingtime": 0.15587329864501953, "endTime": 1481912173.725059, "startTime": 1481912157.97204, "redisTime": 15.58938479423523}	user	0m0.008s	
+real	0m16.970s	sys	0m0.000s	{"totalTime": 15.46469497680664, "processingtime": 0.19096660614013672, "endTime": 1481912173.720041, "startTime": 1481912158.255346, "redisTime": 15.26515507698059}	user	0m0.009s	
+real	0m16.745s	sys	0m0.005s	{"totalTime": 15.040345907211304, "processingtime": 0.16460609436035156, "endTime": 1481912173.735157, "startTime": 1481912158.694811, "redisTime": 14.866269826889038}	user	0m0.003s	
+real	0m17.090s	sys	0m0.008s	{"totalTime": 15.623440980911255, "processingtime": 0.14515233039855957, "endTime": 1481912173.766606, "startTime": 1481912158.143165, "redisTime": 15.47180962562561}	user	0m0.000s	
+real	0m16.857s	sys	0m0.004s	{"totalTime": 15.236352920532227, "processingtime": 0.15660953521728516, "endTime": 1481912173.791813, "startTime": 1481912158.55546, "redisTime": 15.071808338165283}	user	0m0.004s	
+real	0m17.476s	sys	0m0.005s	{"totalTime": 15.997879981994629, "processingtime": 0.1683516502380371, "endTime": 1481912173.837231, "startTime": 1481912157.839351, "redisTime": 15.81679892539978}	user	0m0.002s	
+real	0m16.862s	sys	0m0.008s	{"totalTime": 15.274992942810059, "processingtime": 0.16250109672546387, "endTime": 1481912173.825693, "startTime": 1481912158.5507, "redisTime": 15.106550931930542}	user	0m0.000s	
+real	0m16.855s	sys	0m0.000s	{"totalTime": 15.259897947311401, "processingtime": 0.1834714412689209, "endTime": 1481912173.864847, "startTime": 1481912158.604949, "redisTime": 15.063347339630127}	user	0m0.008s	
+real	0m16.612s	sys	0m0.008s	{"totalTime": 14.96924090385437, "processingtime": 0.20850634574890137, "endTime": 1481912173.858665, "startTime": 1481912158.889424, "redisTime": 14.749328374862671}	user	0m0.000s	
+real	0m17.021s	sys	0m0.004s	{"totalTime": 15.416558980941772, "processingtime": 0.17427468299865723, "endTime": 1481912173.8676, "startTime": 1481912158.451041, "redisTime": 15.23532223701477}	user	0m0.004s	
+real	0m16.897s	sys	0m0.005s	{"totalTime": 15.039651870727539, "processingtime": 0.16014504432678223, "endTime": 1481912173.872186, "startTime": 1481912158.832534, "redisTime": 14.867481708526611}	user	0m0.003s	
+real	0m17.498s	sys	0m0.007s	{"totalTime": 16.111954927444458, "processingtime": 0.16666889190673828, "endTime": 1481912173.921211, "startTime": 1481912157.809256, "redisTime": 15.925774812698364}	user	0m0.000s	
+real	0m17.226s	sys	0m0.000s	{"totalTime": 15.70884895324707, "processingtime": 0.16539478302001953, "endTime": 1481912173.905571, "startTime": 1481912158.196722, "redisTime": 15.53221607208252}	user	0m0.008s	
+real	0m17.538s	sys	0m0.000s	{"totalTime": 15.968559980392456, "processingtime": 0.16724252700805664, "endTime": 1481912173.929143, "startTime": 1481912157.960583, "redisTime": 15.796902179718018}	user	0m0.007s	
+real	0m17.422s	sys	0m0.004s	{"totalTime": 15.753077983856201, "processingtime": 0.1451129913330078, "endTime": 1481912173.93716, "startTime": 1481912158.184082, "redisTime": 15.599448919296265}	user	0m0.004s	
+real	0m16.725s	sys	0m0.000s	{"totalTime": 15.098246097564697, "processingtime": 0.23609089851379395, "endTime": 1481912173.963606, "startTime": 1481912158.86536, "redisTime": 14.847184181213379}	user	0m0.007s	
+real	0m16.720s	sys	0m0.004s	{"totalTime": 15.201202154159546, "processingtime": 0.14785408973693848, "endTime": 1481912174.003338, "startTime": 1481912158.802136, "redisTime": 15.047342300415039}	user	0m0.004s	
+real	0m17.656s	sys	0m0.004s	{"totalTime": 16.241456031799316, "processingtime": 0.17497682571411133, "endTime": 1481912174.013124, "startTime": 1481912157.771668, "redisTime": 16.06157660484314}	user	0m0.004s	
+real	0m17.240s	sys	0m0.000s	{"totalTime": 15.852885007858276, "processingtime": 0.1459047794342041, "endTime": 1481912174.017879, "startTime": 1481912158.164994, "redisTime": 15.695191860198975}	user	0m0.008s	
+real	0m17.517s	sys	0m0.008s	{"totalTime": 16.069243907928467, "processingtime": 0.19141793251037598, "endTime": 1481912174.005707, "startTime": 1481912157.936463, "redisTime": 15.873363494873047}	user	0m0.000s	
+real	0m17.161s	sys	0m0.000s	{"totalTime": 15.680704116821289, "processingtime": 0.17107915878295898, "endTime": 1481912174.020111, "startTime": 1481912158.339407, "redisTime": 15.50086522102356}	user	0m0.009s	
+real	0m17.632s	sys	0m0.000s	{"totalTime": 16.2413649559021, "processingtime": 0.17909812927246094, "endTime": 1481912174.054947, "startTime": 1481912157.813582, "redisTime": 16.05765414237976}	user	0m0.007s	
+real	0m17.312s	sys	0m0.000s	{"totalTime": 15.75664496421814, "processingtime": 0.17226171493530273, "endTime": 1481912174.192052, "startTime": 1481912158.435407, "redisTime": 15.577065467834473}	user	0m0.008s	
+real	0m17.824s	sys	0m0.005s	{"totalTime": 16.178704023361206, "processingtime": 0.1938321590423584, "endTime": 1481912174.203863, "startTime": 1481912158.025159, "redisTime": 15.97578740119934}	user	0m0.002s	
+real	0m17.324s	sys	0m0.009s	{"totalTime": 15.642511129379272, "processingtime": 0.17084503173828125, "endTime": 1481912174.289241, "startTime": 1481912158.64673, "redisTime": 15.460908889770508}	user	0m0.000s	
+real	0m17.315s	sys	0m0.006s	{"totalTime": 15.418387174606323, "processingtime": 0.2134237289428711, "endTime": 1481912174.301207, "startTime": 1481912158.88282, "redisTime": 15.19229006767273}	user	0m0.003s	
+real	0m17.594s	sys	0m0.004s	{"totalTime": 16.050477981567383, "processingtime": 0.1627802848815918, "endTime": 1481912174.423781, "startTime": 1481912158.373303, "redisTime": 15.879920482635498}	user	0m0.004s	

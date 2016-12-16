@@ -1,0 +1,6 @@
+Result\tTimeType\tTime
+	real	0m2.937s	sys	0m0.007s	{"totalTime": 1.7246410846710205, "processingtime": 0.17777109146118164, "endTime": 1481911562.47375, "startTime": 1481911560.749109, "redisTime": 1.5427699089050293}	user	0m0.000s	
+	real	0m2.989s	sys	0m0.005s	{"totalTime": 1.7689540386199951, "processingtime": 0.13956356048583984, "endTime": 1481911562.509411, "startTime": 1481911560.740457, "redisTime": 1.6247093677520752}	user	0m0.002s	
+	real	0m4.117s	sys	0m0.000s	{"totalTime": 3.0203490257263184, "processingtime": 0.3012349605560303, "endTime": 1481911563.663488, "startTime": 1481911560.643139, "redisTime": 2.7141482830047607}	user	0m0.007s	
+	real	0m4.143s	sys	0m0.007s	{"totalTime": 3.024169921875, "processingtime": 0.3279693126678467, "endTime": 1481911563.678922, "startTime": 1481911560.654752, "redisTime": 2.689063549041748}	user	0m0.000s	
+	real	0m4.182s	sys	0m0.000s	{"totalTime": 3.0144259929656982, "processingtime": 0.3417356014251709, "endTime": 1481911563.715766, "startTime": 1481911560.70134, "redisTime": 2.6658027172088623}	user	0m0.007s	

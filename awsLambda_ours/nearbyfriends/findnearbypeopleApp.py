@@ -48,6 +48,7 @@ def postToNearbyPeople(peoplelist, numDivs):
 	sorted_lists = pool.map(postToLambda, newList)
 	#print(sorted_lists)
 	endTime = time.time()
+	print("Time Taken including overhead of creating and sending lists\t",endTime-startTime)
 	re_sorted_lists=sorted(sorted_lists,key=itemgetter('startTime'))
 	printRetVals(re_sorted_lists, numDivs)
 	#print("\n\n", sorted_lists)
