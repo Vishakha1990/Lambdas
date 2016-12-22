@@ -1,0 +1,26 @@
+This README describes the functions implemented in  each of the code files in this directory  and how to run them
+
+
+1) findnearbyfriends.py 
+This file is the Lambda handler hosted on AWS lambda. It takes as input the 'user id' ,  location information, i.e the 'latitude' and 'longitude'  of the user, checks from a REDIS datanode the nearest friends and then calculates who the nearest friends is and returns it as the output. 
+The inputs can either be given from the AWS portal or as an external curl request.
+
+2) runAndTimeCurl.sh
+The sh file created to send curl request to the hosted app with user inputs
+
+3) loop_nearbyfriends.sh
+   loop_the_burst_loop.sh
+The sh files to send burst reqests to the portal
+
+4) The nearbyfriends was tweaked to take all the people in the database and find the one closest to the user. Only the redis query changes here. The core functionality remains the same. 
+findnearbypeople.py
+
+
+5) We changed the application pattern to scale the single request internally. Since, in the present lambda implementation we cannot call lambdas within lambdas, we wrote a wrapper code to quesry the redis database, get the people list, divide the people list (into configurable divisions 4,8,16) , send it to different lambda handlers. All the lambda functions process there respective chunks and output the nearest friend. The wrapper code then finds the nearest person out of this returned list people.
+findnearbypeopleApp.py
+
+6) This is a local version of the code written to test time taken to run the application on a single machine
+### Local version of the app, written to test the app functionality just using the redis node as the database
+findnearbypeoplelocal.py
+
+
